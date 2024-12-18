@@ -35,6 +35,7 @@ main {
     }
     .about-art span {
         font-size: 24px;
+        margin: 0 0 .5rem 0;
         font-family: tit;
         height: 20%;
         color: var(--rosa-ppal);
