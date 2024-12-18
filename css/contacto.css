@@ -1,0 +1,51 @@
+.contacto, .contacto-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacto h2, .cnt-tit{
+    font-family: tit;
+    font-size: 28px;
+    color: var(--rosa-ppal);
+    margin: 1rem 0;
+}
+.contacto p:not(.cnt-tit) {
+    font-size: 18px;
+    text-align: center;
+}
+.cnt-art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    max-width: 350px;
+    border: 5px solid var(--rosa-ppal);
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 5px
+}
+.cnt-art h3 {
+    font-family: tit;
+    font-size: 28px;
+    color: var(--rosa-ppal);
+}
+.cnt-art a {
+    color: var(--rosa-sec);
+}
+.cnt-img {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem;
+    border-radius: 15px;
+}
+@media (min-width: 1024px) {
+    .contacto-info {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
