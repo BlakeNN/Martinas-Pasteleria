@@ -7,7 +7,7 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 :root {
-    --rosa-ppal: rgb(214, 143, 255);
+    --rosa-ppal: hsl(278, 100%, 78%);
     --rosa-sec: rgb(230, 187, 255);
     --rosa-terc: rgb(238, 208, 255);
     --rosa-back: rgb(246, 229, 255);
