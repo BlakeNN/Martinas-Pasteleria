@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Disfruta de tortas y postres artesanales en Eldorado, Misiones. Martina's Pastelería: calidad, amor y diseños personalizados. Contáctanos hoy." />
-    <meta name="keywords" content="pastelería, tortas personalizadas, postres, Eldorado, Misiones, pastelería artesanal, Martina's Pastelería" />
+    <meta name="description"
+        content="Disfruta de tortas y postres artesanales en Eldorado, Misiones. Martina's Pastelería: calidad, amor y diseños personalizados. Contáctanos hoy." />
+    <meta name="keywords"
+        content="pastelería, tortas personalizadas, postres, Eldorado, Misiones, pastelería artesanal, Martina's Pastelería" />
     <meta name="geo.region" content="AR-M" />
     <meta name="geo.placename" content="Eldorado, Misiones" />
     <meta name="geo.position" content="-26.4083;-54.6247" />
     <meta name="ICBM" content="-26.4083, -54.6247" />
     <meta name="author" content="Martina's Pastelería" />
     <meta property="og:title" content="Martina's Pastelería - Delicias Artesanales en Eldorado, Misiones" />
-    <meta property="og:description" content="Disfruta de tortas y postres artesanales en Eldorado, Misiones. Martina's Pastelería: calidad, amor y diseños personalizados. Contáctanos hoy." />
+    <meta property="og:description"
+        content="Disfruta de tortas y postres artesanales en Eldorado, Misiones. Martina's Pastelería: calidad, amor y diseños personalizados. Contáctanos hoy." />
     <meta property="og:image" content="https://martinas-pasteleria.com.ar/imgs/logo.webp" />
     <meta property="og:url" content="https://martinas-pasteleria.com.ar" />
     <meta property="og:type" content="website" />
     <title>Nuestros Productos</title>
-            <script type="application/ld+json">
+    <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "ProductPage",
@@ -58,6 +62,7 @@
     <link rel="alternate" hreflang="es-ar" href="https://martinas-pasteleria.com.ar/views/prods" />
     <link rel="canonical" href="https://martinas-pasteleria.com/views/prods">
 </head>
+
 <body>
     <div class="container-fluid">
         <!-- NAV -->
@@ -83,43 +88,38 @@
         <main>
             <h2 class="prods-tit">Algunos de Nuestros Productos</h2>
             <section class="prods-imgs">
-                <article class="half">
+                <div class="grid-container">
                     <img src="../imgs/img-1.png" alt="Torta - 1" loading="lazy">
                     <img src="../imgs/img-2.png" alt="Torta - 2" loading="lazy">
                     <img src="../imgs/img-3.png" alt="Torta - 3" loading="lazy">
                     <img src="../imgs/img-4.png" alt="Torta - 4" loading="lazy">
-                    <div class="btn-cont">
-                        <button class="more-btn" id="more-btn">Ver Más</button>
-                    </div>
                     <img src="../imgs/img-5.png" alt="Torta - 5" class="hide" loading="lazy">
                     <img src="../imgs/img-6.png" alt="Torta - 6" class="hide" loading="lazy">
                     <img src="../imgs/img-7.png" alt="Torta - 7" class="hide" loading="lazy">
                     <img src="../imgs/img-8.png" alt="Torta - 8" class="hide" loading="lazy">
-                    <img src="../imgs/img-10.png" alt="Torta - 8" class="hide" loading="lazy">
-                    <img src="../imgs/img-11.png" alt="Torta - 8" class="hide" loading="lazy">
-                    <img src="../imgs/img-12.png" alt="Torta - 8" class="hide" loading="lazy">
-                </article>
+                    <img src="../imgs/img-10.png" alt="Torta - 9" class="hide" loading="lazy">
+                    <img src="../imgs/img-11.png" alt="Torta - 10" class="hide" loading="lazy">
+                    <img src="../imgs/img-12.png" alt="Torta - 11" class="hide" loading="lazy">
+                </div>
+                <div class="btn-cont">
+                    <button class="more-btn" id="more-btn">Ver Más</button>
+                </div>
             </section>
         </main>
         <!-- FOOTER -->
         <footer>
-            <p>&copy; 2024 Martinas's Pastelería <br> Página hecha por <a href="https://nn-software.netlify.app/" target="_blank">NN-Software</a></p>
+            <p>&copy; 2024 Martinas's Pastelería <br> Página hecha por <a href="https://reinert-lucas.netlify.app/" target="_blank">Reinert Lucas Iván</a></p>
         </footer>
     </div>
     <script>
-        let imgs = document.querySelectorAll(".hide");
-        let btn = document.getElementById("more-btn");
         document.addEventListener('DOMContentLoaded', () => {
-            imgs.forEach(img => {
-                img.classList.add("hide");
+            const imgs = document.querySelectorAll(".grid-container .hide");
+            const btn = document.getElementById("more-btn");
+
+            btn.addEventListener('click', () => {
+                imgs.forEach(img => img.classList.remove("hide"));
+                btn.classList.add("hide");
             });
-            btn.classList.remove("hide");
-        });
-        btn.addEventListener('click', () => {
-            imgs.forEach(img => {
-                img.classList.remove("hide");
-            });
-            btn.classList.add("hide");
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -129,4 +129,5 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
